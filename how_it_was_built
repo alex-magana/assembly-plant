@@ -1,0 +1,58 @@
+rails version 5.0.1
+ruby version 2.3.1
+
+rails new assembly-plant --api -T --database=postgresql
+
+Navigate to the application directory
+    cd assembly-plant
+
+Add the following to the development section of `config/database.yml`
+    username: assemblyplant_dev
+    password: assemblyplant_dev
+
+Add the following to the test section of `config/database.yml`
+    username: assemblyplant_test
+    password: assemblyplant_test
+
+Create the database user
+    createuser --interactive --pwprompt
+    Role name assemblyplant_dev
+    Role password assemblyplant_dev
+    Superuser? n
+    Create database? n
+    Create more new roles? n
+
+    createuser --interactive --pwprompt
+    Role name assemblyplant_test
+    Role password assemblyplant_test
+    Superuser? n
+    Create database? n
+    Create more new roles? n
+
+Initialize the database
+    rake db:setup
+
+Add gem, rspec-rails to Gemfile in groups, :development and :test.
+    group :development, :test do
+    end
+
+Add gem, factory_bot_rails, shoulda-matchers, faker and database_cleaner to the Gemfile in group :test
+    group :test do
+    end
+
+bundle install
+
+Initialize the 'spec' directory
+    rails generate rspec:install
+
+Create a directory where we define factories for the models
+    mkdir spec/factories
+
+Create a repository on GitHub
+
+Push code to GitHub
+    git init
+    git add .
+    git commit -m "Add skeletal files"
+    git remote add origin git@github.com:alex-magana/assembly-plant.git
+    git push -u origin master
