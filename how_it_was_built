@@ -56,3 +56,6 @@ Push code to GitHub
     git commit -m "Add skeletal files"
     git remote add origin git@github.com:alex-magana/assembly-plant.git
     git push -u origin master
+
+Configure database_cleaner, should-matchers and factory_bot_rails
+    [link goes here]
