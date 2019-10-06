@@ -59,4 +59,20 @@ Push code to GitHub
 
 Configure database_cleaner, should-matchers and factory_bot_rails
     https://github.com/alex-magana/assembly-plant/pull/1/files
-    
+
+Generate the Plant model
+    rails g model Plant name:string latitude:decimal longitude:decimal opening_time:string closing_time:string is_active:boolean
+
+Generate the Vehicle model
+    rails g model Vehicle name:string description:string price:decimal{10,2}
+    - use 'price:decima{10,2}' or 'price:decima{10-2}' for zsh
+
+Generate the Specialty model
+    rails g model Specialty plant:references vehicle:references
+    - This model acts as a join table to serve the association between a Plant
+    and a Vehicle.
+    - This is because a Plant can manufacture many Vehicles and a Vehicle can be
+    manufactured at many Plants.
+
+Run the migrations
+    rails db:migrate
