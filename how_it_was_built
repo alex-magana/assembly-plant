@@ -79,3 +79,24 @@ Generate the Specialty model
 
 Run the migrations
     rails db:migrate
+
+Add specs for model Plant
+    [link goes here]
+
+Add specs for model Vehicle
+    [link goes here]
+
+Add specs for model Specialty
+    [link goes here]
+
+Run tests
+    bundle exec rspec
+
+Add associations to model Plant
+    [link goes here]
+
+Add associations to model Vehicle
+    [link goes here]
+
+Run tests
+    bundle exec rspec
