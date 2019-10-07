@@ -81,22 +81,27 @@ Run the migrations
     rails db:migrate
 
 Add specs for model Plant
-    [link goes here]
+    https://github.com/alex-magana/assembly-plant/commit/1bc0e67e6a0f271a5c975e27356e95a3c13e74ea
+    https://github.com/alex-magana/assembly-plant/pull/4/files
 
 Add specs for model Vehicle
-    [link goes here]
+    https://github.com/alex-magana/assembly-plant/commit/131d37b5bed1a5c9d1a42c2cddfed0727824f635
+    https://github.com/alex-magana/assembly-plant/pull/4/files
 
 Add specs for model Specialty
-    [link goes here]
+    https://github.com/alex-magana/assembly-plant/commit/4f6585d15ab23385d9a2f25a9c41e85fad5f7b57
+    https://github.com/alex-magana/assembly-plant/pull/4/files
 
 Run tests
     bundle exec rspec
 
 Add associations to model Plant
-    [link goes here]
+    https://github.com/alex-magana/assembly-plant/commit/d483ba41f99d1ce51150fd06fa455d735820b97f
+    https://github.com/alex-magana/assembly-plant/pull/4/files
 
 Add associations to model Vehicle
-    [link goes here]
+    https://github.com/alex-magana/assembly-plant/commit/68219ca581408f7e1bcda145779b933e61896dc0
+    https://github.com/alex-magana/assembly-plant/pull/4/files
 
 Run tests
     bundle exec rspec
